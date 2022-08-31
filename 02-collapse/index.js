@@ -16,20 +16,11 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   const changeActionVisible = () => {
-    const hideActionVisible = hideAnimation(".collapsible__action--visible");
-    const hideActionHidden = hideAnimation(".collapsible__action--hidden");
+    hideAnimation(".collapsible__action--visible").play();
+    hideAnimation(".collapsible__action--hidden").play();
 
-    if (actionVisible.hidden) {
-      hideActionVisible.play();
-
-      actionVisible.hidden = false;
-      actionHidden.hidden = true;
-    } else {
-      hideActionHidden.play();
-
-      actionVisible.hidden = true;
-      actionHidden.hidden = false;
-    }
+    actionVisible.hidden = !actionVisible.hidden;
+    actionHidden.hidden = !actionHidden.hidden;
   };
 
   const hideContent = hideAnimation(".collapsible__content");

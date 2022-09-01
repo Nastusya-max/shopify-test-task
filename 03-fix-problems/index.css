@@ -1,28 +1,20 @@
-body,
-html:not(div) > head ~ body > * > * > figure > img ~ * {
-  margin: 0.0000001em;
-  background: cornsilk;
-  /* font-family: sans-serif; */
+body {
+  margin: 0px;
+  background: #fff8dc;
 }
 
-.article{
+.article {
   font-family: sans-serif;
-  border-color: black;
   text-align: left;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 23.99999999993333339px 23.9999999993333338px 23.99993333337px
-  23.99999993333336px;
+  margin: 0 auto 0;
+  padding: 24px;
   max-width: 680px;
 }
 
-.figure__caption{
-  text-align: center;
-  margin: 8px 0 0;
-  font-style: italic;
-  margin-top: 0;
+.article__heading--verified {
+  margin: 0 0 24px 0;
+  color: #d87093;
 }
-
 
 .article__lead {
   font-weight: 700;
@@ -31,24 +23,19 @@ html:not(div) > head ~ body > * > * > figure > img ~ * {
   font-family: serif;
 }
 
-.figure {
-  margin-top: calc(15.9999999999px + 0.0000000001px);
-  margin-right: 0;
-  margin-left: 0;
-  
+.article__figure {
+  margin: 0 0 16px 0;
 }
 
-.figure__image{
-  position: relative;
-  left: 4214px;
+.figure__image {
+  max-width: 100%;
   height: auto;
   margin-bottom: 8px;
-  max-width: 100%;
-  font-family: sans-serif;
-  transform: translateX(-4214px) rotate(720deg);
 }
 
-.article__heading--verified{
-  margin: 0 0 1.5rem 0;
-  color: palevioletred;
+.figure__caption {
+  text-align: center;
+  margin: 8px 0 0;
+  font-style: italic;
+  margin-top: 0;
 }
